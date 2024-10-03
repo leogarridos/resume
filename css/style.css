@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
 :root {
-  --primary: #d67525;
-  --secondary: #e26715;
-  --font-title: #343a40;
+  --primary: #006daa;
+  --secondary: #0099bf;
+  --font-title: #070707;
   --font-text: #6c757d;
   --font-nav: rgba(255, 255, 255, 0.5);
   --font-nav-hover: rgba(255, 255, 255, 0.7);
   --line-box: #cfcdcd;
   --nav-active: #f8f9fa;
-  --icon-link-hover: #e26715;
-  --theme-backgroud: #f8f9fa;
+  --icon-link-hover: #0099bf;
+  --theme-backgroud: #f8f7ff;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -306,6 +306,7 @@ hr {
   background: no-repeat center center;
   background-size: 100% 100%;
 }
+
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
@@ -910,16 +911,16 @@ section.resume-section .resume-section-content {
 
 /* Tema Escuro */
 body.dark-mode {
-  --primary: #a34900;
-  --secondary: #ff6600;
-  --font-title: #d1d1d1;
-  --font-text: #dddddd;
+  --primary: #006daa;
+  --secondary: #00bfb2;
+  --font-title: #f5efed;
+  --font-text: #fffcf9;
   --font-nav: rgba(255, 255, 255, 0.5);
   --font-nav-hover: rgba(255, 255, 255, 0.7);
   --line-box: #cfcdcd;
   --nav-active: #dadada;
-  --icon-link-hover: #ff6600;
-  --theme-backgroud: #2e2e2e;
+  --icon-link-hover: #00bfb2;
+  --theme-backgroud: #0a122a;
   background-color: var(--theme-backgroud);
 }
 
@@ -937,9 +938,23 @@ body.dark-mode .navbar-dark .navbar-brand {
   color: var(--font-nav);
 }
 
-#languageSelector {
-  width: 100px;
-  margin-left: 10px;
-  font-size: 14px;
-  padding: 5px;
+#nav-sectons {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-footer {
+  margin-top: 7em;
+  padding-top: 1em;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--font-nav);
+}
+
+#themeIcon {
+  color: var(--font-nav);
+}
+
+#themeIcon:hover {
+  color: var(--font-nav-hover);
 }
