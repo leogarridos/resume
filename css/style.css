@@ -958,3 +958,34 @@ body.dark-mode .navbar-dark .navbar-brand {
 #themeIcon:hover {
   color: var(--font-nav-hover);
 }
+
+#languageSelector {
+  font-family: inherit; /* Herda a fonte do elemento pai */
+  font-size: inherit; /* Herda o tamanho da fonte do elemento pai */
+  padding: 0.5rem 1rem; /* Espaçamento interno similar ao menu */
+  border: none; /* Remover borda padrão */
+  background-color: transparent; /* Transparente para combinar com o menu */
+  color: var(--font-nav); /* Cor do texto igual aos itens de menu */
+  text-transform: uppercase; /* Tornar texto maiúsculo como os itens do menu */
+  cursor: pointer; /* Alterar o cursor ao passar sobre o select */
+  appearance: none; /* Remover a aparência padrão do select */
+}
+
+#languageSelector:hover {
+  color: var(--font-nav-hover); /* Alterar cor ao passar o mouse */
+}
+
+#languageSelector option {
+  background-color: var(--primary); /* Manter o fundo semelhante ao menu */
+  color: var(--font-nav); /* Cor do texto */
+  font-family: inherit; /* Herda a fonte do elemento pai */
+  font-size: inherit; /* Herda o tamanho da fonte do elemento pai */
+}
+
+#languageSelector:focus {
+  outline: none; /* Remover o outline padrão */
+}
+
+.nav-link {
+  padding: 0.5rem 1rem; /* Garantir espaçamento consistente com o select */
+}
