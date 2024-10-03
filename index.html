@@ -37,7 +37,9 @@
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
          </button>
+
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div id="nav-sections"> 
             <ul class="navbar-nav">
               <li class="nav-item">
                   <a id="aboutNav" class="nav-link js-scroll-trigger" href="#about">Sobre</a>
@@ -65,22 +67,23 @@
                </li>
                
                 
-                <!-- Botão de alternância de tema -->
-                <li class="nav-item mt-auto">
-                  <a href="javascript:void(0)" id="themeToggle" class="nav-link">
-                    <i id="themeIcon" class="fas fa-sun"></i> 
-                  </a>
-                </li>
-
-                <li class="nav-item mt-auto">
-                  <select id="languageSelector" class="form-control">
-                    <option value="pt">Português</option>
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                  </select>
-                </li>
-
+                
             </ul>
+            <!-- Section for theme toggle and language selector -->
+            <div class="nav-footer mt-auto d-flex justify-content-around">
+               <!-- Botão de alternância de tema -->
+               <a href="javascript:void(0)" id="themeToggle" class="nav-link">
+                  <i id="themeIcon" class="fas fa-sun"></i>
+               </a>
+               <!-- Seletor de linguagem -->
+               <select id="languageSelector" class="form-control">
+                  <option value="pt">Português</option>
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+               </select>
+            </div>
+         </div>
+
          </div>
       </nav>
       <!-- Page Content-->
